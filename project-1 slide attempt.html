@@ -19,6 +19,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="image-slider" href="./styles/image-slider.css" />
   </head>
 
   <body class="project-1">
@@ -38,12 +39,17 @@
     <div class="project-wrapper">
       <aside class="project-aside">
         <div class="project-info">
-          <h1 class="project-title">Shipyards Park Photoshoot</h1>
+          <h1 class="project-title">The Title Of Your Project</h1>
           <p class="project-description">
-            A photoshoot done for Multimedia 111, image editing fundamentals.
-            The task was to take pictures of a tourism destination and then
-            enhance the photos in Adobe Lightroom without making them appear
-            unrealistic.
+            A brief description of your project goes here. The background colors
+            are only to show you the <em>.project-aside</em> and
+            <em>.project-details</em> boxes.
+          </p>
+          <p class="project-description">
+            This is a sticky sidebar (<em>.project-aside</em>) so that your
+            project title and description remain visible as you scroll down the
+            page. To remove the sticky sidebar, see
+            <em>Sidebar on Large Devices</em> in style.css.
           </p>
         </div>
         <ul class="project-navigation">
@@ -60,69 +66,95 @@
         </ul>
       </aside>
       <main class="project-details">
-        <div class="project-image">
-          <img
-            src="assets/project-1/project-1-photograph-comparison/duncan-snooks-shipyards-park1.jpg"
-            width="800"
-            height="800"
-            alt="A description of the image"
-          />
-        </div>
-        <div class="project-image">
-          <img
-            src="assets/project-1/project-1-photograph-comparison/duncan-snooks-shipyards-park2.jpg"
-            width="800"
-            height="800"
-            alt="A description of the image"
-          />
-        </div>
-        <div class="project-image">
-          <img
-            src="assets/project-1/project-1-photograph-comparison/duncan-snooks-shipyards-park3.jpg"
-            width="800"
-            height="800"
-            alt="A description of the image"
-          />
-        </div>
-        <div class="project-image">
-          <img
-            src="assets/project-1/project-1-photograph-comparison/duncan-snooks-shipyards-park4.jpg"
-            width="800"
-            height="800"
-            alt="A description of the image"
-          />
-        </div>
-        <div class="project-image">
-          <img
-            src="assets/project-1/project-1-photograph-comparison/duncan-snooks-shipyards-park5.jpg"
-            width="800"
-            height="800"
-            alt="A description of the image"
-          />
-        </div>
-        <div class="project-image">
-          <img
-            src="assets/project-1/project-1-photograph-comparison/duncan-snooks-shipyards-park6.jpg"
-            width="800"
-            height="800"
-            alt="A description of the image"
-          />
-        </div>
-        <div class="project-image">
-          <img
-            src="assets/project-1/project-1-photograph-comparison/duncan-snooks-shipyards-park7.jpg"
-            width="800"
-            height="800"
-            alt="A description of the image"
-          />
-        </div>
-        <div class="project-image">
-          <img
-            src="assets/project-1/project-1-photograph-comparison/duncan-snooks-shipyards-park8.jpg"
-            width="800"
-            height="800"
-            alt="A description of the image"
-          />
+        <div>
+          <ul class="slides">
+            <input type="radio" name="radio-btn" id="img-1" checked />
+            <li class="slide-container">
+              <div class="slide">
+                <img
+                  src="assets/project-1/project-1-photograph-comparison/duncan-snooks-shipyards-park1.jpg"
+                />
+              </div>
+              <div class="nav">
+                <label for="img-6" class="prev">&#x2039;</label>
+                <label for="img-2" class="next">&#x203a;</label>
+              </div>
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-2" />
+            <li class="slide-container">
+              <div class="slide">
+                <img
+                  src="assets/project-1/project-1-photograph-comparison/duncan-snooks-shipyards-park2.jpg"
+                />
+              </div>
+              <div class="nav">
+                <label for="img-1" class="prev">&#x2039;</label>
+                <label for="img-3" class="next">&#x203a;</label>
+              </div>
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-3" />
+            <li class="slide-container">
+              <div class="slide">
+                <img
+                  src="assets/project-1/project-1-photograph-comparison/duncan-snooks-shipyards-park3.jpg"
+                />
+              </div>
+              <div class="nav">
+                <label for="img-2" class="prev">&#x2039;</label>
+                <label for="img-4" class="next">&#x203a;</label>
+              </div>
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-4" />
+            <li class="slide-container">
+              <div class="slide">
+                <img
+                  src="assets/project-1/project-1-photograph-comparison/duncan-snooks-shipyards-park4.jpg"
+                />
+              </div>
+              <div class="nav">
+                <label for="img-3" class="prev">&#x2039;</label>
+                <label for="img-5" class="next">&#x203a;</label>
+              </div>
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-5" />
+            <li class="slide-container">
+              <div class="slide">
+                <img
+                  src="assets/project-1/project-1-photograph-comparison/duncan-snooks-shipyards-park5.jpg"
+                />
+              </div>
+              <div class="nav">
+                <label for="img-4" class="prev">&#x2039;</label>
+                <label for="img-6" class="next">&#x203a;</label>
+              </div>
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-6" />
+            <li class="slide-container">
+              <div class="slide">
+                <img
+                  src="assets/project-1/project-1-photograph-comparison/duncan-snooks-shipyards-park6.jpg"
+                />
+              </div>
+              <div class="nav">
+                <label for="img-5" class="prev">&#x2039;</label>
+                <label for="img-1" class="next">&#x203a;</label>
+              </div>
+            </li>
+
+            <li class="nav-dots">
+              <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+              <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+              <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+              <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+              <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+              <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+            </li>
+          </ul>
         </div>
       </main>
     </div>
