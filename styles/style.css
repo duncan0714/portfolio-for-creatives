@@ -368,12 +368,13 @@ a:active {
 
 .work-wrapper {
   flex: 1;
+  padding: 1rem;
 }
 
 /* Padding around work grid and project page */
 .portfolio,
 .project-wrapper {
-  padding: 0.25rem;
+  padding: 1rem;
 }
 
 /* Defining the work page grid */
@@ -468,8 +469,8 @@ a:active {
 .global-footer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 3rem;
-  min-height: 100vh;
+  grid-gap: 1rem;
+  min-height: 60vh;
   background: var(--background-color-footer);
   padding: 1rem;
 }
@@ -480,22 +481,18 @@ a:active {
 }
 
 .footer-item-2 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-.footer-item-3 {
-  grid-column: 1 / 2;
+  grid-column: 3 / 4;
   grid-row: 3 / 4;
 }
 
-.footer-item-4 {
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
+.footer-item-3 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
 
-.awards-list {
-  margin-bottom: 2rem;
+.footer-item-4 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
 }
 
 /* Project Page 
@@ -853,7 +850,7 @@ a.sub-navigation-link:hover {
 
   .global-footer {
     padding: 4rem 4rem 0 4rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
   }
 
   .about-picture {
@@ -873,7 +870,7 @@ a.sub-navigation-link:hover {
 
   .footer-item-2 {
     grid-row: 1 / 2;
-    grid-column: 2 / 3;
+    grid-column: 3 / 4;
   }
 
   .about-contact {
@@ -883,7 +880,7 @@ a.sub-navigation-link:hover {
 
   .footer-item-3 {
     grid-row: 1 / 2;
-    grid-column: 3 / 4;
+    grid-column: 2 / 3;
   }
 
   .about-fineprint {
