@@ -959,3 +959,29 @@ a.sub-navigation-link:hover {
 
 @media (min-width: 1400px) {
 }
+
+/*
+
+
+
+*/
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.video-container::after {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
