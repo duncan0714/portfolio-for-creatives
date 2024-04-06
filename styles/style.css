@@ -75,26 +75,26 @@ html {
   --heading-typeface: "Maiden Orange", serif;
   --project-title-typeface: "Maiden Orange", serif;
   --background-color: #ababab;
-  --background-color-about: #f5f5f5;
+  --background-color-about: #ababab;
   --background-color-footer: #f5f5f5;
   --alt-background-color: #000000;
   --background-color-holding-page: rgba(82, 0, 255, 0.6);
-  --h1-color: #5200ff;
-  --h2-color: #5200ff;
-  --h3-color: #5200ff;
-  --h4-color: #5200ff;
-  --h5-color: #5200ff;
-  --h6-color: #5200ff;
+  --h1-color: #001fc1;
+  --h2-color: #001fc1;
+  --h3-color: #001fc1;
+  --h4-color: #001fc1;
+  --h5-color: #001fc1;
+  --h6-color: #001fc1;
   --primary-text-color: black;
   --holding-page-title-color: #ebedf0;
   --accent-color: #5200ff;
   --overlay-color: #5200ff;
   --overlay-title-color: #ffffff;
   --overlay-description-color: #ffffff;
-  --hyperlink-color: #5200ff;
+  --hyperlink-color: #001fc1;
   --hyperlink-alternate-color: orangered;
   --hover-color: #111;
-  --visited-color: #5200ff;
+  --visited-color: #6f00ff;
   --project-title-color: black;
   --project-sidebar-background-color: transparent;
   --project-sidebar-text-color: black;
@@ -470,7 +470,7 @@ a:active {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
-  min-height: 60vh;
+  min-height: 40vh;
   background: var(--background-color-footer);
   padding: 1rem;
 }
@@ -967,7 +967,7 @@ a.sub-navigation-link:hover {
   ██  ██   ██ ██   ██ █████   ██    ██     ██████  ██      ███████   ████   █████   ██████
    ████    ██ ██   ██ ██      ██    ██     ██      ██      ██   ██    ██    ██      ██   ██
     ██     ██ ██████  ███████  ██████      ██      ███████ ██   ██    ██    ███████ ██   ██
-    
+
 */
 
 .video-container {
