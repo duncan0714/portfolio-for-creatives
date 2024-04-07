@@ -9,5 +9,5 @@ function randomPage() {
     "work.html",
   ];
   var value = arr[Math.floor(Math.random() * arr.length)];
-  alert("Would navigate to : " + value);
+  window.location = value;
 }
