@@ -206,7 +206,7 @@ em {
   font-size: 3.725rem;
   font-family: var(--project-title-typeface);
   color: var(--project-title-color);
-  text-shadow: 2px 2px 3px black;
+  text-shadow: 1px 1px 3px black;
   margin-bottom: 1rem;
 }
 
@@ -522,6 +522,13 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: linear-gradient(
+      180deg,
+      rgba(171, 171, 171, 1) 9%,
+      rgba(83, 83, 108, 1) 49%,
+      rgba(65, 78, 134, 1) 86%
+    )
+    fixed;
 }
 
 /* Sidebar */
@@ -562,6 +569,10 @@ a:active {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+}
+
+.project-image-content {
+  border: solid black 1px;
 }
 
 .excel-project-image {
@@ -618,7 +629,13 @@ a:active {
   text-align: center;
   width: 100%;
   min-height: 100vh;
-  color: var(--background-color);
+  background: linear-gradient(
+      45deg,
+      rgba(171, 171, 171, 1) 9%,
+      rgba(83, 83, 108, 1) 49%,
+      rgba(65, 78, 134, 1) 86%
+    )
+    fixed;
 }
 
 .holding-page-animation {
