@@ -30,7 +30,7 @@ Imported stylesheets. Remove the ones you do not want to use.
 @import url("text-stroke.css");
 @import url("stroke-shadow.css");
 @import url("scroll-to-top.css");
-@import url("image-slider.css");
+
 /*
 
 X-Small devices (portrait phones, less than 576px) 
@@ -78,7 +78,7 @@ html {
   --background-color-about: #ababab;
   --background-color-footer: #f5f5f5;
   --alt-background-color: #000000;
-  --background-color-holding-page: rgba(82, 0, 255, 0.6);
+  --background-color-holding-page: rgba(40, 10, 206, 0.6);
   --h1-color: #001fc1;
   --h2-color: #001fc1;
   --h3-color: #001fc1;
@@ -87,20 +87,19 @@ html {
   --h6-color: #001fc1;
   --primary-text-color: black;
   --holding-page-title-color: #ebedf0;
-  --accent-color: #5200ff;
-  --overlay-color: #5200ff;
-  --overlay-title-color: #ffffff;
-  --overlay-description-color: #ffffff;
+  --accent-color: orangered;
+  --overlay-color: #fbfbfc;
+  --overlay-title-color: #001fc1;
+  --overlay-description-color: black;
   --hyperlink-color: #001fc1;
   --hyperlink-alternate-color: orangered;
   --hover-color: #111;
   --visited-color: #6f00ff;
-  --project-title-color: black;
+  --project-title-color: #001fc1;
   --project-sidebar-background-color: transparent;
   --project-sidebar-text-color: black;
-  --heart-color: darkred;
   --holding-page-footer-color: #f8f8ff;
-  --text-selection-background-color: #5200ff;
+  --text-selection-background-color: #ebebeb;
   --linear-gradient-color-1: #ff057c;
   --linear-gradient-color-2: #8d0b93;
   --linear-gradient-color-3: #321575;
@@ -165,7 +164,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   color: var(--h4-color);
 }
@@ -207,6 +206,7 @@ em {
   font-size: 3.725rem;
   font-family: var(--project-title-typeface);
   color: var(--project-title-color);
+  text-shadow: 2px 2px 3px black;
   margin-bottom: 1rem;
 }
 
@@ -326,7 +326,7 @@ a:active {
 }
 
 .logo {
-  width: 3rem;
+  width: 20rem;
 }
 
 .hero-headline-wrapper {
@@ -427,13 +427,26 @@ a:active {
                                            
 */
 
+.about-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      180deg,
+      rgba(171, 171, 171, 1) 9%,
+      rgba(83, 83, 108, 1) 49%,
+      rgba(65, 78, 134, 1) 86%
+    )
+    fixed;
+}
+
 .about {
+  max-width: 65%;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 3rem;
-  background: var(--background-color-about);
+  grid-gap: 1rem;
   padding: 1rem;
-  flex: 1;
 }
 
 .about-item-1 {
@@ -548,7 +561,16 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
+
+.excel-project-image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .project-image-descriptor {
   width: 100%;
   display: flex;
@@ -849,10 +871,20 @@ a.sub-navigation-link:hover {
     filter: grayscale(0);
   }
 
+  .about-page {
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(171, 171, 171, 1) 9%,
+        rgba(83, 83, 108, 1) 49%,
+        rgba(65, 78, 134, 1) 86%
+      )
+      fixed;
+  }
   .about {
-    padding: 2rem;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 5fr 3fr 1fr;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 300px 50px;
   }
 
   .global-footer {
@@ -861,8 +893,14 @@ a.sub-navigation-link:hover {
   }
 
   .about-picture {
+    display: flex;
+    align-items: end;
+    justify-content: end;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+  }
+  .about-image {
+    border: solid black 5px;
   }
 
   .footer-item-1 {
@@ -871,6 +909,10 @@ a.sub-navigation-link:hover {
   }
 
   .about-about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
   }
@@ -933,6 +975,13 @@ a.sub-navigation-link:hover {
   .project-image {
     min-height: 70vh;
     /* This should be deleted if you want to remove space between project images on project pages */
+  }
+
+  .excel-project-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .project-image-container {
