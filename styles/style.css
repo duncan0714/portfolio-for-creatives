@@ -83,7 +83,7 @@ html {
   --h2-color: #001fc1;
   --h3-color: #001fc1;
   --h4-color: #001fc1;
-  --h5-color: #001fc1;
+  --h5-color: white;
   --h6-color: #001fc1;
   --primary-text-color: black;
   --holding-page-title-color: #ebedf0;
@@ -170,7 +170,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
   color: var(--h5-color);
 }
@@ -433,9 +433,9 @@ a:active {
   justify-content: center;
   background: linear-gradient(
       180deg,
-      rgba(171, 171, 171, 1) 9%,
-      rgba(83, 83, 108, 1) 49%,
-      rgba(65, 78, 134, 1) 86%
+      rgba(171, 171, 171, 1) 15%,
+      rgba(83, 83, 108, 1) 65%,
+      rgba(65, 78, 134, 1) 85%
     )
     fixed;
 }
